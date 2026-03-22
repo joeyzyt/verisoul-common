@@ -78,7 +78,3 @@ Add the dependency to your `pom.xml`:
 | `SoulProfileDataDTO` | Container for lists of souls and issuer addresses |
 | `UpdateSoulRequestDTO` | Request payload for updating soul metadata |
 | `UserRecordDTO` | User information (email, DOB, gender, major) |
-
-## License
-
-See the [verisoul](https://github.com/joeyzyt/verisoul) repository for license information.
