@@ -79,16 +79,6 @@ Add the dependency to your `pom.xml`:
 | `UpdateSoulRequestDTO` | Request payload for updating soul metadata |
 | `UserRecordDTO` | User information (email, DOB, gender, major) |
 
-## Build Order
-
-When building the full platform, build in this order:
-
-```bash
-cd ~/verisoul-common && mvn clean install
-cd ~/verisoul && mvn clean install -Ddocker.skip=true
-cd ~/verisoul-api && mvn clean install -DskipITs=true
-```
-
 ## License
 
 See the [verisoul](https://github.com/joeyzyt/verisoul) repository for license information.
