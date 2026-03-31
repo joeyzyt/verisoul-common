@@ -1,5 +1,6 @@
 package ai.megaannum.api.dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 // POJO class corresponding to each record in ProfilesDB.json
@@ -51,6 +52,8 @@ public class ProfilesUtils {
 
     // Compatibility methods, since some places in the Service layer may use getOwner-style accessors.
     // If you only access the public fields directly, these getters are optional.
+    @JsonIgnore
     public String getOwner() { return To; }
+    @JsonIgnore
     public String getCertName() { return CertId; }
 }
