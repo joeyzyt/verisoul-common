@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface ProfileQueryService {
 
-    List<ProfileDisplayDTO> listProfilesDisplay(String soulName) throws Exception;
+    List<ProfileDisplayDTO> listProfilesDisplay(String soulName);
 
-    DecryptedAssetDTO downloadCertificate(String issuer, String soulName, String identity) throws Exception;
+    DecryptedAssetDTO downloadCertificate(String issuer, String soulName, String identity);
 }
