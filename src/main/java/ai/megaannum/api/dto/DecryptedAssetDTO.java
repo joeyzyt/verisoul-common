@@ -1,5 +1,8 @@
 package ai.megaannum.api.dto;
 
+/**
+ * Represents a decrypted credential file retrieved from IPFS, containing the raw file content and its original name.
+ */
 public class DecryptedAssetDTO {
     private byte[] fileContent;
     private String fileName;

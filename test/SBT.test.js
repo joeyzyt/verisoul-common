@@ -276,8 +276,9 @@ describe("SBT Contract", function () {
       await sbt.setProfile(profiler1.address, soul1.address, makeSoul("cert1", "url1"), profiler1.address);
     });
 
-    it("revokeProfile sets isRevoked to true", async function () {
-      await sbt.revokeProfile(profiler1.address, soul1.address, "cert1", profiler1.address);
+    it("revokeProfile sets isRevoked to true and emits RevokeProfile", async function () {
+      await expect(sbt.revokeProfile(profiler1.address, soul1.address, "cert1", profiler1.address))
+        .to.emit(sbt, "RevokeProfile").withArgs(profiler1.address, soul1.address, "cert1");
       expect(await sbt.checkRevocation(profiler1.address, soul1.address, "cert1")).to.be.true;
     });
 

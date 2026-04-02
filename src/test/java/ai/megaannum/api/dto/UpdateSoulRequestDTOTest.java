@@ -9,11 +9,11 @@ class UpdateSoulRequestDTOTest {
     @Test
     void settersAndGettersRoundTrip() {
         UpdateSoulRequestDTO dto = new UpdateSoulRequestDTO();
-        dto.setUseName("alice");
+        dto.setUserName("alice");
         dto.setMetadataUrl("ipfs://QmABC");
         dto.setDescription("Updated profile");
 
-        assertThat(dto.getUseName()).isEqualTo("alice");
+        assertThat(dto.getUserName()).isEqualTo("alice");
         assertThat(dto.getMetadataUrl()).isEqualTo("ipfs://QmABC");
         assertThat(dto.getDescription()).isEqualTo("Updated profile");
     }
@@ -21,7 +21,7 @@ class UpdateSoulRequestDTOTest {
     @Test
     void noArgConstructorFieldsAreNull() {
         UpdateSoulRequestDTO dto = new UpdateSoulRequestDTO();
-        assertThat(dto.getUseName()).isNull();
+        assertThat(dto.getUserName()).isNull();
         assertThat(dto.getMetadataUrl()).isNull();
         assertThat(dto.getDescription()).isNull();
     }

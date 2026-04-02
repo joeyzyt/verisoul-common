@@ -2,6 +2,9 @@ package ai.megaannum.api.dto;
 
 import java.math.BigInteger;
 
+/**
+ * Represents a credential profile formatted for UI display, including issuer, file name, timestamp, and download URL.
+ */
 public class ProfileDisplayDTO {
     private String identity;
     private String issuer;
@@ -18,10 +21,10 @@ public class ProfileDisplayDTO {
         this.fileName = fileName;
         this.timestamp = timestamp;
         this.downloadUrl = downloadUrl;
-        this.formalType ="";
+        this.formalType = "";
     }
 
-    public ProfileDisplayDTO(String identity, String issuer, String fileName, BigInteger timestamp, String downloadUrl,String formalType) {
+    public ProfileDisplayDTO(String identity, String issuer, String fileName, BigInteger timestamp, String downloadUrl, String formalType) {
         this.identity = identity;
         this.issuer = issuer;
         this.fileName = fileName;
@@ -40,6 +43,6 @@ public class ProfileDisplayDTO {
     public void setTimestamp(BigInteger timestamp) { this.timestamp = timestamp; }
     public String getDownloadUrl() { return downloadUrl; }
     public void setDownloadUrl(String downloadUrl) { this.downloadUrl = downloadUrl; }
-    public String getFormalType(){return formalType;}
+    public String getFormalType() { return formalType; }
     public void setFormalType(String formalType) { this.formalType = formalType; }
 }

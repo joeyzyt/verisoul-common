@@ -2,6 +2,9 @@ package ai.megaannum.api.dto;
 
 import java.math.BigInteger;
 
+/**
+ * Represents on-chain Soulbound Token data including identity, metadata URL, reputation score, and mint timestamp.
+ */
 public class SoulDTO {
     private String identity;
     private String url;

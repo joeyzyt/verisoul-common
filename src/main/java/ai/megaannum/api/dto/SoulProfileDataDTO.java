@@ -2,6 +2,9 @@ package ai.megaannum.api.dto;
 
 import java.util.List;
 
+/**
+ * Aggregates a soul's credential profiles and their associated issuers for listing operations.
+ */
 public class SoulProfileDataDTO {
     private List<SoulDTO> souls;
     private List<String> issuers;

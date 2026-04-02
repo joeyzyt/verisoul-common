@@ -34,6 +34,7 @@ contract SBT {
     event Update(address _soul);
     event SetProfile(address _profiler, address _soul, string identity);
     event RemoveProfile(address _profiler, address _soul, string identity);
+    event RevokeProfile(address _profiler, address _soul, string identity);
 
     constructor(string memory _name, string memory _ticker) {
         name = _name;
@@ -173,7 +174,7 @@ contract SBT {
 
         profiles[_profiler][_soul][idx - 1].isRevoked = true;
 
-        emit RemoveProfile(_profiler, _soul, _identity);
+        emit RevokeProfile(_profiler, _soul, _identity);
     }
 
     function checkRevocation(

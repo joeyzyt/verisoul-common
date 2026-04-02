@@ -1,5 +1,8 @@
 package ai.megaannum.api.dto;
 
+/**
+ * Represents a user's profile record containing personal information such as email, date of birth, and major.
+ */
 public class UserRecordDTO {
     private String email;
     private String dateOfBirth;

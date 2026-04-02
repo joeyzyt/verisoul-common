@@ -3,7 +3,9 @@ package ai.megaannum.api.dto;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-// POJO class corresponding to each record in ProfilesDB.json
+/**
+ * Represents a credential profile record in the local profiles database, mapping to JSON entries in ProfilesDB.
+ */
 public class ProfilesUtils {
 
     // Maps to JSON: "FormalType" : "Graduation Certificate"
